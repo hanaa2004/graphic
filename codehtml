@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function draw(){
+            var canvas = document.getElementById("myCanvas");
+
+            var ctx = canvas.getContext("2d");
+            ctx.beginPath();
+            ctx.fillStyle = "yellow";
+            ctx.arc(300,300,150,0,2*Math.PI);
+            ctx.closePath();
+            ctx.fill();
+        
+    
+            var ctx2 = canvas.getContext("2d");
+            ctx2.beginPath();
+            ctx2.fillStyle="white";
+            ctx2.arc(250,250,50,0,2*Math.PI);
+            ctx2.closePath();
+            ctx2.fill();
+        
+            
+            var ctx3 = canvas.getContext("2d");
+            ctx3.beginPath();
+            ctx3.fillStyle = "white";
+            ctx3.arc(350,250,50,0,2*Math.PI);
+            ctx3.closePath();
+            ctx3.fill();
+
+            var ctx4 = canvas.getContext("2d");
+            ctx4.beginPath();
+            ctx4.fillStyle = "black";
+            ctx4.arc(240,230,25,0,2*Math.PI);
+            ctx4.closePath();
+            ctx4.fill();
+
+            var ctx5 = canvas.getContext("2d");
+            ctx5.beginPath();
+            ctx5.fillStyle = "black";
+            ctx5.arc(340,230,25,0,2*Math.PI);
+            ctx5.closePath();
+            ctx5.fill();
+
+            var ctx6=canvas.getContext("2d");
+            ctx6.beginPath();
+            ctx6.fillStyle = "black";
+            ctx6.rect(240,370,100,6);
+            ctx6.closePath();
+            ctx6.fill();
+        }
+        
+    </script>
+    
+</head>
+
+<body onload="draw(); ">
+    <canvas id="myCanvas" width="600px" height="600px" style="background-color: rgb(213, 144, 134);"></canvas>
+    
+    
+</body>
+</html>
